@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c7c1c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1900px;
+    min-height: 810px;
+    background: #fff;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.container .left-side {
+    background: #657b8b;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ffe7d4;
+}
+
+.profile-text .imgbx {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.profile-text .imgbx img {
+
+    position: absolute;
+    top: 0;
+    left: 10;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.profile-text h2,
+h6 {
+    margin-top: 20px;
+    color: #ffe7d4;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+/*Largeur défini à 90% largeur "left-side" pour adapter taille écran */
+.profile-container {
+    width: 90%;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+/* Descendre le PROFIL plus bas que la bordure */
+.description {
+
+    margin-top: 1em;
+    color: #ffe7d4;
+
+}
+
+.description p {
+    margin-top: -0.5em;
+    float: inline-start;
+    font-size: 13px;
+    color: #ffe7d4;
+}
+
+.soft-skills {
+    margin-top: 1em;
+
+}
+
+.soft-skills ul {
+    margin-top: -0.5em;
+    list-style: none;
+    font-size: 14px;
+    margin-left: 2em;
+}
+
+.contact {
+    padding-top: 1em;
+}
+
+.contact h4 {
+    color: #ffe7d4;
+}
+
+.contact ul {
+    margin-top: -0.5em;
+    position: relative;
+    list-style: none;
+}
+
+/*Espacement entre mode contact + action pointeur */
+.contact ul li {
+    margin: 0.3em 0;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/*Espace les icones du texte */
+.contact ul li .icon {
+    display: inline-block;
+    width: 2em;
+
+}
+
+.container .right-side {
+    position: relative;
+    background: #657b8b;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+}
+
+.hard-skills h3 {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    margin-top: 1em;
+    color: #657b8b;
+    border: 1px solid #ffe7d4;
+    background-color: #ffe7d4
+}
+
+.hard-skills,
+h4,
+p {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    color: #ffe7d4;
+}
+
+.hard-skills h4 {
+    font-size: 14px;
+}
+
+.hard-skills p {
+    font-size: 12px;
+}
+
+.experience {
+    margin-left: 2em;
+}
+
+.experience .title {
+    color: #657b8b;
+    margin-top: 1em;
+
+    margin-right: 2em;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border: 1px solid #ffe7d4;
+    background-color: #ffe7d4;
+}
+
+.year-company {
+    font-size: 12px;
+    font-style: italic;
+
+}
+
+.text ul {
+    margin-top: 1em;
+    color: #ffe7d4;
+    list-style: none;
+    font-size: 12px;
+    margin-left: 2.2em;
+}
+
+.Formations ul {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .container .right-side {
+        margin-top: 1em;
+    }
+}
